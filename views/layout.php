@@ -7,14 +7,14 @@
     Le Quai Antique vous pouvez réserver votre tables sur ce dernier et 
     consulter notre cartes ainsi que les différents menus.">
     <link rel="shortcut icon" href="/assets/images/icon_restaurant.png" type="image/x-icon">
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Le Quai Antique</title>
 </head>
 <header>
     <nav class="navMenu">
         <a class="navItem" href='/la-carte'>La Carte</a>
         <a class="navItem" href="/menus">Nos Menus</a>
-        <a class="navItemLogo" href="/"><img class="navItemLogo" src="assets/images/le-toulousain_trans.png"></a>
+        <a class="navItemLogo" href="/"><img class="navItemLogo" src="assets/images/logo_le_quai_antique.png"></a>
         <a class="navItem" href="/reservation">Réserver</a>
         <div>
             <a class="navItem Connect" href="/inscription">S'inscire</a>
