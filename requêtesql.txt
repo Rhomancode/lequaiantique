@@ -116,3 +116,14 @@ CREATE TABLE images (
     title VARCHAR(100) NOT NULL,  
     img VARCHAR(1000) NOT NULL 
 );
+
+INSERT INTO restaurants (id, name, address, postalCode, city, numberPlace) VALUES 
+    (UUID(), "Le Quai Antique", "32 Chemin du Quai", "73000", "Chambéry", 180);
+
+INSERT INTO hoursOpening (dayOfweek, restaurant, lunchOpening, lunchClosing, dinerOpening, dinerClosing)
+VALUES 
+('Mercredi', '10c4075e-a30d-11ed-9875-f39927f76100', '12:00:00', '14:30:00', '18:30:00', '22:30:00'),
+('Jeudi', '10c4075e-a30d-11ed-9875-f39927f76100', '12:00:00', '14:30:00', '18:30:00', '22:30:00'),
+('Vendredi', '10c4075e-a30d-11ed-9875-f39927f76100', '12:00:00', '14:30:00', '18:30:00', '22:30:00'),
+('Samedi', '10c4075e-a30d-11ed-9875-f39927f76100', '12:00:00', '14:30:00', '18:30:00', '23:00:00'),
+('Dimanche', '10c4075e-a30d-11ed-9875-f39927f76100', '11:00:00', '15:00:00', '18:30:00', '22:30:00');
