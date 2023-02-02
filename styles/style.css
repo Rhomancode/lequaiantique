@@ -143,6 +143,49 @@ li {
     justify-content: center;
 }
 
+.form {
+    width: 400px;
+    height: 520px;
+    padding: 50px 35px;
+}
+
+.formGroup {
+    margin-top: 10px;
+}
+
+.formInput {
+    height: 60px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Marcellus', serif;
+    box-shadow: 0 5px 15px -10px #111;
+    margin-bottom: 12%;
+    font-size: 0.8em;
+    background-color: #FCFAFA;
+}
+
+.formInput:hover {
+    border: none;
+}
+
+
+.formBtn {
+    height: 70px;
+    width: 100%;
+    background-color: #D00000;
+    border: none; 
+    border-radius: 10px;
+    color: #F3F3F4;
+    font-family: 'Marcellus', serif;
+    box-shadow: 0 5px 15px -10px #111;
+    font-size: 1em;
+}
+
+.formLink {
+    color: #3B71CA;
+    margin: 5%;
+}
 
 
 
