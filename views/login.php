@@ -6,13 +6,13 @@ ob_start();
 ?>
 <form class="form" action="" method="post">
     <div class="formGroup">
-        <label for="email">Email</label>
+        <label class="formLabel" for="email">Email</label>
     </div>
     <div class="formGroup">
         <input type="email" name="email" id="email" class="formInput" placeholder="Email" required="required">
     </div>
     <div class="formGroup">
-        <label for="email">Mot de passe</label>
+        <label class="formLabel" for="email">Mot de passe</label>
     </div>
     <div class="formGroup">
         <input type="password" class="formInput" placeholder="Mot de passe" required="required">

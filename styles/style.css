@@ -145,7 +145,7 @@ li {
 
 .form {
     width: 400px;
-    height: 520px;
+    height: 400px;
     padding: 50px 35px;
 }
 
@@ -163,6 +163,7 @@ li {
     margin-bottom: 12%;
     font-size: 0.8em;
     background-color: #FCFAFA;
+    outline: none;
 }
 
 .formInput:hover {
@@ -185,6 +186,10 @@ li {
 .formLink {
     color: #3B71CA;
     margin: 5%;
+}
+
+.formLabel {
+    font-weight: 600;
 }
 
 
