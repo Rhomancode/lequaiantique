@@ -7,7 +7,7 @@
     Le Quai Antique vous pouvez réserver votre tables sur ce dernier et 
     consulter notre cartes ainsi que les différents menus.">
     <link rel="shortcut icon" href="/assets/images/icon_restaurant.png" type="image/x-icon">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="/styles/style.css">
     <title>Le Quai Antique</title>
 </head>
 <header>
