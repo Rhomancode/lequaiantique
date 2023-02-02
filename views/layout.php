@@ -14,7 +14,7 @@
     <nav class="navMenu">
         <a class="navItem" href='/la-carte'>La Carte</a>
         <a class="navItem" href="/menus">Nos Menus</a>
-        <a class="navItemLogo" href="/"><img class="navItemLogo" src="assets/images/logo_le_quai_antique.png"></a>
+        <a class="navItemLogo" href="/"><img class="navItemLogo" src="assets/images/lequaiantiquelogo.png"></a>
         <a class="navItem" href="/reservation">Réserver</a>
         <div>
             <a class="navItem Connect" href="/inscription">S'inscire</a>
