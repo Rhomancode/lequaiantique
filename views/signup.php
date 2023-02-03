@@ -4,7 +4,7 @@ $title = "Inscrivez-vous";
 
 ob_start();
 ?>
-<form class="form" action="" method="post">
+<form class="form" action="subscribe.php" method="post">
     <div class="formGroup">
         <label class="formLabel" for="email">Email</label>
     </div>
@@ -42,13 +42,13 @@ ob_start();
         <input type="phone" name="phone" id="phone" class="formInput" placeholder="+33" required="required">
     </div>
     <div class="formGroup">
-        <label class="formLabel" for="allergy">Pour vos réservation référencer vos allergies allimentaires ici</label>
+        <label class="formLabel" for="allergy">Pour vos réservation référencer vos allergies allimentaires ici (Facultatif)</label>
     </div>
     <div class="formGroup">
-        <textarea type="text" name="allergy" id="allergy" class="formInput" placeholder="Arrachide, gluten" required="required"></textarea>
+        <textarea type="text" name="allergy" id="allergy" class="formInput" placeholder="Arrachide, gluten"></textarea>
     </div>
     <div class="formGroup">
-        <button type="submit" class="formBtn">S'inscrire'</button>
+        <button type="submit" class="formBtn">S'inscrire</button>
     </div>
     <div class="formGroup">
         <a href="#" class="formLink">Déja un compte ? Connectez-vous</a>
