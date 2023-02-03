@@ -12,10 +12,10 @@
 </head>
 <header>
     <nav class="navMenu">
-        <a class="navItem" href='/la-carte'>La Carte</a>
-        <a class="navItem" href="/menus">Nos Menus</a>
+        <a class="navItem" href='#'>La Carte</a>
+        <a class="navItem" href="#">Nos Menus</a>
         <a class="navItemLogo" href="/"><img class="navItemLogo" src="assets/images/lequaiantiquelogo.png"></a>
-        <a class="navItem" href="/reservation">Réserver</a>
+        <a class="navItem" href="#">Réserver</a>
         <div>
             <a class="navItem Connect" href="/inscription">S'inscire</a>
             <a class="navItem Connect" href="/connexion">Se Connecter</a>

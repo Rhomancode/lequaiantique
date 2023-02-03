@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&family=Heebo&family=Marcellus&family=Merriweather:ital@1&display=swap');
+
+body {
+    font-family: 'Marcellus', serif;
+    font-size: 1.2em;
+    background-color: #FCFAFA;
+}
+
+header{
+    background-color: #F3F3F4;
+}
+
+
+.navMenu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 25px 0;
+    box-shadow: 0 5px 15px -10px #111;
+    height: 100px;
+}
+
+.navMenu .navItem {
+    color: rgb(49, 49, 49);
+    text-decoration: none;
+    font-size: 1.0em;
+    text-transform: uppercase;
+    padding: 24px;
+    font-weight: 600;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.s ease-in-out;
+}
+
+.connect {
+    justify-content: right;
+}
+
+
+.navMenu .navItem:hover {
+    color: #D00000;
+    font-size: 1.2em;
+}
+
+.navMenu .navItem:active {
+    color: #D00000;
+    font-size: 1.2em;
+}
+
+.navItemLogo {
+    width: 160px;
+    position: relative;
+    background-color: #F3F3F4;
+    border-radius: 50%;
+}
+
+.navItemLogo:hover{
+    width: 280px;
+}
+
+.imgContainer {
+    max-width: 100%;
+    opacity: 0.33;
+    position: absolute;
+}
+
+.imgContainer img {
+    max-width: 100%;
+}
+
+.contentContainer {
+    background-color:#F3F3F4;
+    box-shadow: 0 5px 15px -10px #111;
+    border-radius: 25px;
+    position: relative;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% 20% 5% 20%;
+    padding-bottom: 20px;
+}
+
+.titleCategoriesMenu {
+    font-family: 'Merriweather', serif;
+    font-size: 1.0em;
+    color: #03191E;
+    padding: 10px 0 0 10px;
+}
+
+li {
+    list-style: none;
+}
+
+.titleMenu {
+    font-family: 'Marcellus', serif;
+    color: #03191E;
+}
+
+.descriptionMenu {
+    font-family: 'Antic Didone', serif;
+    color: #7E7F83;
+}
+
+.priceMenu {
+    font-family: 'Marcellus', serif;
+    color:#03191E;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.containerHour {
+    width: 100%;
+    background-color: #03191E;
+    border-radius: 25px;
+    color: #7E7F83;
+    display: flex;
+    grid-template-columns: 2fr, 1fr, 1fr;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.thHour {
+    padding: 12px;
+}
+
+.tdHour {
+    padding: 7px;
+    color: #F3F3F4;
+}
+.titleHour {
+    font-size: 1em;
+    text-align: center;
+    color: #D00000;
+}
+
+.horraires {
+    table-layout:fixed;
+    font-size: 0.7em;
+    font-weight: 300;
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+}
+
+.form {
+    width: 400px;
+    padding: 50px 35px;
+    position: relative;
+}
+
+.formGroup {
+    margin-top: 10px;
+}
+
+.formInput {
+    height: 60px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Marcellus', serif;
+    box-shadow: 0 5px 15px -10px #111;
+    margin-bottom: 12%;
+    font-size: 0.8em;
+    background-color: #FCFAFA;
+    outline: none;
+}
+
+.formInput:hover {
+    border: none;
+}
+
+
+.formBtn {
+    height: 70px;
+    width: 100%;
+    background-color: #D00000;
+    border: none; 
+    border-radius: 10px;
+    color: #F3F3F4;
+    font-family: 'Marcellus', serif;
+    box-shadow: 0 5px 15px -10px #111;
+    font-size: 1em;
+}
+
+.formLink {
+    color: #3B71CA;
+    margin: 5%;
+}
+
+.formLabel {
+    font-weight: 600;
+}
+
+
+
