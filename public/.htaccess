@@ -1,0 +1,10 @@
+# Demmarage du moteur de réécriture
+RewriteEngine On
+
+# Condition de réécriture
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Réécriture de l'URL
+RewriteRule ^([a-zA-Z0-9\-\_\/]*)$ index.php?p=$1
+

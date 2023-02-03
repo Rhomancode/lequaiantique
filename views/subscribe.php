@@ -4,7 +4,7 @@ $title = "Inscrivez-vous";
 
 ob_start();
 ?>
-<form class="form" action="subscribe.php" method="post">
+<form class="form" action="" method="post">
     <div class="formGroup">
         <label class="formLabel" for="email">Email</label>
     </div>
