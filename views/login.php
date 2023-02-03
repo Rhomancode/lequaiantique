@@ -4,7 +4,7 @@ $title = "Connectez-vous";
 
 ob_start();
 ?>
-<form class="form" action="" method="post">
+<form class="form" action="../models/login/connexion.php" method="post">
     <div class="formGroup">
         <label class="formLabel" for="email">Email</label>
     </div>
