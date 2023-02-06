@@ -3,7 +3,10 @@
 $title = "Inscrivez-vous";
 
 ob_start();
-?>
+if (!empty($message)) { ?>
+    <p class="errorMessage"><?php echo $message ?></p>
+<?php } ?>
+<p></p>
 <form class="form" action="" method="post">
     <div class="formGroup">
         <label class="formLabel" for="email">Email</label>
@@ -54,8 +57,6 @@ ob_start();
         <a href="#" class="formLink">Déja un compte ? Connectez-vous</a>
     </div>
 </form>
-
-
 
 <?php
 $content = ob_get_clean();

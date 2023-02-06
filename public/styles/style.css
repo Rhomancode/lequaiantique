@@ -170,6 +170,14 @@ li {
     border: none;
 }
 
+.formInput.success{
+    outline: green;
+    border-color: green;
+}
+
+.formInput.error{
+    border-color: red;
+}
 
 .formBtn {
     height: 70px;
@@ -190,6 +198,14 @@ li {
 
 .formLabel {
     font-weight: 600;
+}
+
+.errorMessage {
+    background-color: #e66262;
+    border: #AA4502 1px solid;
+    padding: 5px 10px;
+    color: #FFFFFF;
+    border-radius: 3px;
 }
 
 
