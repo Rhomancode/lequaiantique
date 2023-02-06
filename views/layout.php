@@ -16,10 +16,20 @@
         <a class="navItem" href="#">Nos Menus</a>
         <a class="navItemLogo" href="/"><img class="navItemLogo" src="assets/images/lequaiantiquelogo.png"></a>
         <a class="navItem" href="#">Réserver</a>
-        <div>
-            <a class="navItem Connect" href="/inscription">S'inscire</a>
-            <a class="navItem Connect" href="/connexion">Se Connecter</a>
-        </div>
+        <?php if(!isset($_SESSION['user'])): ?>
+            <div>
+                <a class="navItem Connect" href="/inscription">S'inscire</a>
+                <a class="navItem Connect" href="/connexion">Se Connecter</a>
+            </div>
+        <?php else: ?>
+            <div>
+                <li>Bonjour <?= $_SESSION['user']['lastName']. ' '.$_SESSION['user']['firstName'] ?></li>
+                <nav  class="menuProfil">
+                    <a class="menuProfilItem" href="/profil">Mes informations</a>
+                    <a class="menuProfilItem" href="/disconnect">Deconnexion</a>
+                </nav>
+            </div>
+        <?php endif; ?>
     </nav>
 </header>
 <body>
