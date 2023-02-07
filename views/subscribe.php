@@ -60,11 +60,10 @@ if (!empty($message)) { ?>
         <button type="submit" class="formBtn">S'inscrire</button>
     </div>
     <div class="formGroup">
-        <a href="#" class="formLink">Déja un compte ? Connectez-vous</a>
+        <a href="/connexion" class="formLink">Déja un compte ? Connectez-vous</a>
     </div>
 </form>
 
-<script defer src="script/subscribe.js"></script>
 <?php
 $content = ob_get_clean();
 require('layout.php');
