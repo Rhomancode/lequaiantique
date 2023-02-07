@@ -23,11 +23,13 @@
             </div>
         <?php else: ?>
             <div>
-                <li>Bonjour <?= $_SESSION['user']['lastName']. ' '.$_SESSION['user']['firstName'] ?></li>
-                <nav  class="menuProfil">
-                    <a class="menuProfilItem" href="/profil">Mes informations</a>
-                    <a class="menuProfilItem" href="/disconnect">Deconnexion</a>
-                </nav>
+                <li class="navItem" href='#'>Bonjour <?= $_SESSION['user']['lastName']. ' '.$_SESSION['user']['firstName'] ?>
+                    <ul class="dropDown">
+                        <li><a class="dropDownItem" href="/profil">Mes informations</a></li>
+                        <li><a class="dropDownItem" href="/profil">Mes réservations</a></li>
+                        <li><a class="dropDownItem" href="/deconnexion">Deconnexion</a></li>
+                    </ul>
+        </li>
             </div>
         <?php endif; ?>
     </nav>
