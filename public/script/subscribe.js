@@ -40,7 +40,7 @@ const validateInputs = () => {
     const phoneValue = phone.value.trim();
     const allergyValue = allergy.value.trim();
 
-    if(emailValue !== "") {
+    if(emailValue === "") {
         setError(email, "Veuillez renseigner votre Email");
     } else {
         setSuccess(email);
