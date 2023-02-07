@@ -1,5 +1,7 @@
 <?php 
 
+session_start();
+
 require_once('validDataForm.php');
 
 //Verification d'envoi du formulaire
@@ -28,7 +30,7 @@ if (!empty($_POST)){
                 $message= "L'utilisateur et/ou le mot de passe est incorrect";
             }
 
-            session_start();
+
 
             $_SESSION['user'] = [
                 "id" => $user['id'],
@@ -39,7 +41,7 @@ if (!empty($_POST)){
                 "allergy" => $user['allergy']
             ];
 
-            $message = "Bienvenue ".$user['lastName']. ' '.$user['firstName'];
+            header('Location: /');
 
         } else {
             $message = "Veuillez rentrez un email valide";
