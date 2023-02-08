@@ -21,7 +21,7 @@
                 <a class="navItem Connect" href="/inscription">S'inscire</a>
                 <a class="navItem Connect" href="/connexion">Se Connecter</a>
             </div>
-        <?php else: ?>
+        <?php elseif($_SESSION['user']['role'] === 'role_user'): ?>
             <div>
                 <li class="navItem" href='#'>Bonjour <?= $_SESSION['user']['lastName']. ' '.$_SESSION['user']['firstName'] ?>
                     <ul class="dropDown">
@@ -29,7 +29,22 @@
                         <li><a class="dropDownItem" href="/profil">Mes réservations</a></li>
                         <li><a class="dropDownItem" href="/deconnexion">Deconnexion</a></li>
                     </ul>
-        </li>
+                </li>
+            </div>
+        <?php elseif ($_SESSION['user']['role'] === 'role_admin'): ?>
+            <div>
+                <li class="navItem" href='#'>Bonjour <?= $_SESSION['user']['lastName']. ' '.$_SESSION['user']['firstName'] ?>
+                    <ul class="dropDown">
+                        <li><a class="dropDownItem" href="/profil">Gérer les images d'accueil</a></li>
+                        <li><a class="dropDownItem" href="/profil">Gérer les entrées</a></li>
+                        <li><a class="dropDownItem" href="/profil">Gérer les plats</a></li>
+                        <li><a class="dropDownItem" href="/profil">Gérer les désserts</a></li>
+                        <li><a class="dropDownItem" href="/profil">Gérer les menus</a></li>
+                        <li><a class="dropDownItem" href="/profil">Gérer les horraires</a></li>
+                        <li><a class="dropDownItem" href="/profil">Gérer les réservations</a></li>
+                        <li><a class="dropDownItem" href="/deconnexion">Deconnexion</a></li>
+                    </ul>
+                </li>
             </div>
         <?php endif; ?>
     </nav>
