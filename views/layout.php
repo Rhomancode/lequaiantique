@@ -6,15 +6,15 @@
     <meta name="viewport" content="Voici le site web de notre Restaurant 
     Le Quai Antique vous pouvez réserver votre tables sur ce dernier et 
     consulter notre cartes ainsi que les différents menus.">
-    <link rel="shortcut icon" href="/assets/images/icon_restaurant.png" type="image/x-icon">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="../assets/images/icon_restaurant.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/style.css">
     <title>Le Quai Antique</title>
 </head>
 <header>
     <nav class="navMenu">
         <a class="navItem" href='#'>La Carte</a>
         <a class="navItem" href="#">Nos Menus</a>
-        <a class="navItemLogo" href="/"><img class="navItemLogo" src="assets/images/lequaiantiquelogo.png"></a>
+        <a class="navItemLogo" href="/"><img class="navItemLogo" src="../assets/images/lequaiantiquelogo.png"></a>
         <a class="navItem" href="#">Réserver</a>
         <?php if(!isset($_SESSION['user'])): ?>
             <div>
@@ -36,7 +36,7 @@
                 <li class="navItem" href='#'>Bonjour <?= $_SESSION['user']['lastName']. ' '.$_SESSION['user']['firstName'] ?>
                     <ul class="dropDown">
                         <li><a class="dropDownItem" href="/profil">Gérer les images d'accueil</a></li>
-                        <li><a class="dropDownItem" href="/profil">Gérer les entrées</a></li>
+                        <li><a class="dropDownItem" href="/entree/ajouter">Gérer les entrées</a></li>
                         <li><a class="dropDownItem" href="/profil">Gérer les plats</a></li>
                         <li><a class="dropDownItem" href="/profil">Gérer les désserts</a></li>
                         <li><a class="dropDownItem" href="/profil">Gérer les menus</a></li>
@@ -51,7 +51,7 @@
 </header>
 <body>
     <div class="imgContainer">
-        <img src="assets/images/background.jpg">
+        <img src="../assets/images/background.jpg">
     </div>
     <div class="contentContainer">
         <h1><?= $title ?></h1>
