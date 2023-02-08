@@ -51,7 +51,20 @@ if(!empty($_POST)) {
                                 $insert->bindValue(":phone", $phone);
                                 $insert->bindValue(":allergy", $allergy);
                                 //Insertion dans la base
-                                $insert->execute();
+                                if ($insert->execute()){
+                                    //Récupérer l'id de l'utilisateur inscrit
+                                    $check = $pdo->prepare('SELECT * FROM users WHERE email = :email');
+                                    $check->bindValue(':email', $email, PDO::PARAM_STR);
+                                    $check->execute();
+                                    
+                                    //Insertion du role dans la table userRole
+                                    if($user = $check->fetch()) {
+                                        $role = $pdo->prepare('INSERT INTO userRoles (userId, roleId) VALUES (:userId, :roleId)');
+                                        $role->bindValue(':userId', $user['id']);
+                                        $role->bindValue(':roleId', 'ff1194a8-a6e9-11ed-9875-f39927f76100');
+                                        $role->execute();
+                                    }
+                                }        
                                 $message= "Inscription réussi";    
                             } else {
                                 $message = "Les mots de passe ne correspondent pas";
