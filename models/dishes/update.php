@@ -31,7 +31,7 @@ if(isset($_GET['id']) && !empty($_GET['id'])) {
                 $update->bindValue(':description', $description, PDO::PARAM_STR);
                 $update->bindValue(':price', $price, PDO::PARAM_INT);
                 if($update->execute()) {
-                    $messageSuccess = "L'entrée à été modifiée avec succès !";
+                    $messageSuccess = "Le plat à été modifiée avec succès !";
         
                 }
                 

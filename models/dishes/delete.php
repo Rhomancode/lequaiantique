@@ -14,10 +14,10 @@ if(isset($_GET['id']) && !empty($_GET['id'])) {
         $messageError = "Ce plat n'existe pas";
     }
 
-    $delete = $pdo->prepare('DELETE FROM entrances WHERE id = :id');
+    $delete = $pdo->prepare('DELETE FROM dishes WHERE id = :id');
     $delete->bindValue(':id', $checkDishe['id'], PDO::PARAM_STR);
     if ($delete->execute()) {
-        $messageSuccess = "Produit supprimé";
+        $messageSuccess = "Le plat est supprimé";
 
         header('Location: /plats');
     }
