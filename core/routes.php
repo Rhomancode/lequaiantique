@@ -10,4 +10,5 @@ $routes = [
     '/entrees' => '../controllers/entrances/list.php',
     '/entree/supprimer' => '../controllers/entrances/delete.php',
     "/entree" => '../controllers/entrances/update.php',
+    '/404' => '../controllers/404.php',
 ];

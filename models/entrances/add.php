@@ -21,6 +21,8 @@ if(!empty($_POST)) {
         $insert->bindValue(':price', $price, PDO::PARAM_INT);
         if($insert->execute()) {
             $message = "L'entrée à été ajoutée avec succès !";
+
+            header('Location: /entree');
         }
         
     } else {
