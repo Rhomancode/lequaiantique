@@ -5,9 +5,13 @@ session_start();
 $title = "Ajouter une entrée";
 
 ob_start();
-if (!empty($message)) { ?>
-    <p class="errorMessage"><?php echo $message ?></p>
-<?php } ?>
+if (!empty($messageError)) { ?>
+    <p class="errorMessage"><?php echo $messageError ?></p>
+<?php }
+if (!empty($messageSuccess)) { ?>
+    <p class="successMessage"><?php echo $messageSuccess ?></p>
+<?php }
+?>
 <form class="form" id="form" action="" method="post">
     <div class="formGroup">
         <label class="formLabel" for="name">Nom</label>
@@ -29,6 +33,9 @@ if (!empty($message)) { ?>
     </div>
     <div class="formGroup">
         <button type="submit" class="formBtn">Ajouter</button>
+    </div>
+    <div class="formGroup">
+        <a class="addButton" href='/entrees'>Retour à la liste d'entrées</a>
     </div>
 </form>
 

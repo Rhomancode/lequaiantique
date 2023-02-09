@@ -20,12 +20,11 @@ if(!empty($_POST)) {
         $insert->bindValue(':description', $description, PDO::PARAM_STR);
         $insert->bindValue(':price', $price, PDO::PARAM_INT);
         if($insert->execute()) {
-            $message = "L'entrée à été ajoutée avec succès !";
+            $messageSuccess = "L'entrée à été ajoutée avec succès !";
 
-            header('Location: /entree');
         }
         
     } else {
-        $message = "Le formulaire est incomplet";
+        $messageError = "Le formulaire est incomplet";
     }
 }
