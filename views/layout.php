@@ -36,8 +36,8 @@
                 <li class="navItem" href='#'>Bonjour <?= $_SESSION['user']['lastName']. ' '.$_SESSION['user']['firstName'] ?>
                     <ul class="dropDown">
                         <li><a class="dropDownItem" href="/profil">Gérer les images d'accueil</a></li>
-                        <li><a class="dropDownItem" href="/entree/ajouter">Gérer les entrées</a></li>
-                        <li><a class="dropDownItem" href="/profil">Gérer les plats</a></li>
+                        <li><a class="dropDownItem" href="/entrees">Gérer les entrées</a></li>
+                        <li><a class="dropDownItem" href="/plats">Gérer les plats</a></li>
                         <li><a class="dropDownItem" href="/profil">Gérer les désserts</a></li>
                         <li><a class="dropDownItem" href="/profil">Gérer les menus</a></li>
                         <li><a class="dropDownItem" href="/profil">Gérer les horraires</a></li>

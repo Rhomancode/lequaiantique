@@ -61,7 +61,7 @@ if (!empty($_POST)){
                     //]
 
                 } else {
-                    $message = "Le mot de passe est incorrect";
+                    $message = "L'utilisateur et/ou le mot de passe est incorrect";
                 }
 
             } else {

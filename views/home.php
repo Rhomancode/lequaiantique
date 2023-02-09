@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 $title = "Bienvenue au Quai Antique";
 
 ob_start();
