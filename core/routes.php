@@ -7,4 +7,7 @@ $routes = [
     '/profil' => '../controllers/profil.php',
     '/deconnexion' => '../models/disconnect.php',
     '/entree/ajouter' => '../controllers/entrances/add.php',
+    '/entrees' => '../controllers/entrances/list.php',
+    '/entree/supprimer' => '../controllers/entrances/delete.php',
+    "/entree" => '../controllers/entrances/update.php',
 ];
