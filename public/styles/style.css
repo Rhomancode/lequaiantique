@@ -255,6 +255,10 @@ li {
     color: #D00000;
 }
 
+.successMessage {
+    color: #09c372;
+}
+
 .tabAdmin {
     width: 100%;
     border-radius: 15px;
