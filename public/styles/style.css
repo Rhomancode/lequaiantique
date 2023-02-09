@@ -288,3 +288,9 @@ li {
 .upButton {
     color:#03191E;
 }
+
+.legalMentions {
+    font-size: 0.5em;
+    color: #FCFAFA;
+    text-align: center;
+}    

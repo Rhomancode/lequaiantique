@@ -12,7 +12,7 @@
 </head>
 <header>
     <nav class="navMenu">
-        <a class="navItem" href='#'>La Carte</a>
+        <a class="navItem" href='/la-carte'>La Carte</a>
         <a class="navItem" href="#">Nos Menus</a>
         <a class="navItemLogo" href="/"><img class="navItemLogo" src="../assets/images/lequaiantiquelogo.png"></a>
         <a class="navItem" href="#">Réserver</a>
@@ -38,7 +38,7 @@
                         <li><a class="dropDownItem" href="/profil">Gérer les images d'accueil</a></li>
                         <li><a class="dropDownItem" href="/entrees">Gérer les entrées</a></li>
                         <li><a class="dropDownItem" href="/plats">Gérer les plats</a></li>
-                        <li><a class="dropDownItem" href="/profil">Gérer les désserts</a></li>
+                        <li><a class="dropDownItem" href="/desserts">Gérer les désserts</a></li>
                         <li><a class="dropDownItem" href="/profil">Gérer les menus</a></li>
                         <li><a class="dropDownItem" href="/profil">Gérer les horraires</a></li>
                         <li><a class="dropDownItem" href="/profil">Gérer les réservations</a></li>
@@ -75,6 +75,7 @@
             </tr>
             <?php endforeach; ?>
 </table>
+    <p class="legalMentions">Tous droit réservés Roman PONS 2023 ce site est pour mon examen</p>
     </div>
 </footer>
 </html>

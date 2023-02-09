@@ -14,5 +14,10 @@ $routes = [
     '/plats' => '../controllers/dishes/list.php',
     '/plat/supprimer' => '../controllers/dishes/delete.php',
     "/plat" => '../controllers/dishes/update.php',
+    '/dessert/ajouter' => '../controllers/desserts/add.php',
+    '/desserts' => '../controllers/desserts/list.php',
+    '/dessert/supprimer' => '../controllers/desserts/delete.php',
+    "/dessert" => '../controllers/desserts/update.php',
     '/404' => '../controllers/404.php',
+    '/la-carte' => '../controllers/menu.php',
 ];

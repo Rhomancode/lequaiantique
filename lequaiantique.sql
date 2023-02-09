@@ -128,3 +128,20 @@ VALUES
 ('Vendredi', '10c4075e-a30d-11ed-9875-f39927f76100', '12:00:00', '14:30:00', '18:30:00', '22:30:00'),
 ('Samedi', '10c4075e-a30d-11ed-9875-f39927f76100', '12:00:00', '14:30:00', '18:30:00', '23:00:00'),
 ('Dimanche', '10c4075e-a30d-11ed-9875-f39927f76100', '11:00:00', '15:00:00', '18:30:00', '22:30:00');
+
+INSERT INTO roles (id, name) VALUES (UUID(), 'role_admin'), (UUID(), 'role_user');
+
+SELECT id FROM users WHERE email = "roman.pons31@gmail.com";
+
+SELECT * FROM userRoles JOIN roles ON roles.id = userRoles.roleId WHERE id = '745aa622-a707-11ed-9875-f39927f7610';
+
+SELECT * FROM `userRoles` JOIN roles ON roles.id = userRoles.roleId 
+JOIN users ON users.id = userRoles.userId WHERE userRoles.userId = users.id AND roles.id = userRoles.roleId;
+
+SELECT * FROM `userRoles` JOIN roles ON roles.id = userRoles.roleId WHERE userRoles.userId = '745aa622-a707-11ed-9875-f39927f76100';
+
+SELECT * FROM userRoles WHERE userId = '745aa622-a707-11ed-9875-f39927f76100';
+
+UPDATE Table userRoles SET roleId = "ff0fcbb4-a6e9-11ed-9875-f39927f76100" WHERE userId = '745aa622-a707-11ed-9875-f39927f76100';
+
+UPDATE `userRoles` SET `roleId` = 'ff0fcbb4-a6e9-11ed-9875-f39927f76100' WHERE `userRoles`.`userId` = '745aa622-a707-11ed-9875-f39927f76100' AND `userRoles`.`roleId` = 'ff1194a8-a6e9-11ed-9875-f39927f76100';

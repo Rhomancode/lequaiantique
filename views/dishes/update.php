@@ -2,7 +2,7 @@
 
 session_start();
 
-$title = "Modifier l'entrée";
+$title = "Modifier le plat";
 
 ob_start();
 if (!empty($messageError)) { ?>
