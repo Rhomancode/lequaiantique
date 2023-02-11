@@ -18,6 +18,12 @@ $routes = [
     '/desserts' => '../controllers/desserts/list.php',
     '/dessert/supprimer' => '../controllers/desserts/delete.php',
     "/dessert" => '../controllers/desserts/update.php',
+    '/formule/ajouter' => '../controllers/formulaMenu/add.php',
+    '/formules' => '../controllers/formulaMenu/list.php',
+    '/formule/supprimer' => '../controllers/formulaMenu/delete.php',
+    "/formule" => '../controllers/formulaMenu/update.php',
     '/404' => '../controllers/404.php',
     '/la-carte' => '../controllers/menu.php',
+    '/non-autorisee' => '../controllers/unauthorized.php',
 ];
+

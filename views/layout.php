@@ -39,6 +39,7 @@
                         <li><a class="dropDownItem" href="/entrees">Gérer les entrées</a></li>
                         <li><a class="dropDownItem" href="/plats">Gérer les plats</a></li>
                         <li><a class="dropDownItem" href="/desserts">Gérer les désserts</a></li>
+                        <li><a class="dropDownItem" href="/formules">Gérer les formules de menu</a></li>
                         <li><a class="dropDownItem" href="/profil">Gérer les menus</a></li>
                         <li><a class="dropDownItem" href="/profil">Gérer les horraires</a></li>
                         <li><a class="dropDownItem" href="/profil">Gérer les réservations</a></li>
