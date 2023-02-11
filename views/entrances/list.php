@@ -1,7 +1,5 @@
 <?php
 
-session_start();
-
 $title = "Liste des entrées";
 
 ob_start();

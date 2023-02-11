@@ -1,5 +1,6 @@
 <?php 
 
+session_start();
 require_once('../models/hoursOpening.php');
 
 
@@ -11,4 +12,8 @@ require_once('../models/desserts/Desserts.php');
 $desserts = new Desserts();
 $desserts = $desserts->dessertsList();
 
-require_once('../views/desserts/list.php');
+if($_SESSION['user']['role'] === 'role_admin') {
+    require_once('../views/desserts/list.php');
+} else {
+    header('Location: /non-autorisee');
+}

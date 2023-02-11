@@ -1,7 +1,5 @@
 <?php
 
-session_start();
-
 $title = "Ajouter une entrée";
 
 ob_start();

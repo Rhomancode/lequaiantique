@@ -1,7 +1,5 @@
 <?php
 
-session_start();
-
 $title = "Ajouter un plat";
 
 ob_start();
