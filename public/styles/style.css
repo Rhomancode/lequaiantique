@@ -116,11 +116,11 @@ header{
     box-shadow: 0 5px 15px -10px #111;
     border-radius: 25px;
     position: relative;
-    width: 60%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 5% 20% 5% 20%;
+    margin: 5% 10% 5% 10%;
     padding-bottom: 20px;
     z-index: 2;
 }
@@ -260,7 +260,7 @@ li {
 }
 
 .tabAdmin {
-    width: 100%;
+    max-width: 100%;
     border-radius: 15px;
     display: flex;
     grid-template-columns: 2fr, 1fr, 1fr;
@@ -273,7 +273,7 @@ li {
 
 
 .tabAdmin td {
-    border: 1px solid #03191E;
+    padding: 20px;
 }
 .addButton {
     color:#3B71CA;
@@ -294,3 +294,11 @@ li {
     color: #FCFAFA;
     text-align: center;
 }    
+
+.imageBddList {
+    width: 300px;
+}
+
+.imageBddDetail {
+    width: 420px;
+}

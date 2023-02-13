@@ -25,5 +25,9 @@ $routes = [
     '/404' => '../controllers/404.php',
     '/la-carte' => '../controllers/menu.php',
     '/non-autorisee' => '../controllers/unauthorized.php',
+    '/image/ajouter' => '../controllers/images/add.php',
+    '/images' => '../controllers/images/list.php',
+    '/image/supprimer' => '../controllers/images/delete.php',
+    '/image' => '../controllers/images/update.php',
 ];
 
