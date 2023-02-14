@@ -13,7 +13,7 @@
 <header>
     <nav class="navMenu">
         <a class="navItem" href='/la-carte'>La Carte</a>
-        <a class="navItem" href="#">Nos Menus</a>
+        <a class="navItem" href="/nos-menus">Nos Menus</a>
         <a class="navItemLogo" href="/"><img class="navItemLogo" src="../assets/images/lequaiantiquelogo.png"></a>
         <a class="navItem" href="#">Réserver</a>
         <?php if(!isset($_SESSION['user'])): ?>
@@ -40,7 +40,7 @@
                         <li><a class="dropDownItem" href="/plats">Gérer les plats</a></li>
                         <li><a class="dropDownItem" href="/desserts">Gérer les désserts</a></li>
                         <li><a class="dropDownItem" href="/formules">Gérer les formules de menu</a></li>
-                        <li><a class="dropDownItem" href="/profil">Gérer les menus</a></li>
+                        <li><a class="dropDownItem" href="/menus">Gérer les menus</a></li>
                         <li><a class="dropDownItem" href="/profil">Gérer les horraires</a></li>
                         <li><a class="dropDownItem" href="/profil">Gérer les réservations</a></li>
                         <li><a class="dropDownItem" href="/deconnexion">Deconnexion</a></li>

@@ -29,5 +29,10 @@ $routes = [
     '/images' => '../controllers/images/list.php',
     '/image/supprimer' => '../controllers/images/delete.php',
     '/image' => '../controllers/images/update.php',
+    '/menu/ajouter' => '../controllers/menus/add.php',
+    '/menus' => '../controllers/menus/list.php',
+    '/menu' => '../controllers/menus/update.php',
+    '/menu/supprimer' => '../controllers/menus/delete.php',
+    '/nos-menus' => '../controllers/menus.php',
 ];
 

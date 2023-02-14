@@ -1,4 +1,5 @@
 <?php
+
 require_once('../models/hoursOpening.php');
 
 
@@ -21,7 +22,6 @@ require_once('../models/desserts/Desserts.php');
 $desserts = new Desserts();
 $desserts = $desserts->dessertsList();
 
-require_once('../models/images/update.php');
+require_once('../models/menus/add.php');
 
-require_once('../views/images/update.php');
-
+require_once('../views/menus/add.php');

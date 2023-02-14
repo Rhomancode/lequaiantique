@@ -34,7 +34,7 @@ if (!empty($messageSuccess)) { ?>
         <button type="submit" class="formBtn">Ajouter</button>
     </div>
     <div class="formGroup">
-        <a class="addButton" href='/plats'>Retour à la liste des desserts</a>
+        <a class="addButton" href='/desserts'>Retour à la liste des desserts</a>
     </div>
 </form>
 
