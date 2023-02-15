@@ -116,11 +116,11 @@ header{
     box-shadow: 0 5px 15px -10px #111;
     border-radius: 25px;
     position: relative;
-    width: 80%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 5% 10% 5% 10%;
+    margin: 5% 5% 5% 5%;
     padding-bottom: 20px;
     z-index: 2;
 }
@@ -214,6 +214,7 @@ li {
     padding-left: 15px;
 }
 
+
 .error {
     color: #ff3860;
 }
@@ -301,4 +302,161 @@ li {
 
 .imageBddDetail {
     width: 420px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-gap: 20px;
+    overflow: hidden;
+    height: 80vh; 
+    width: 90%;
+    box-shadow: 0 5px 15px -10px #111;
+    border-radius: 10px;
+}
+
+.gallery {
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 5px 15px -10px #111;
+}   
+
+.navGallery {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    box-shadow: 0 5px 15px -10px #111;
+}
+
+.lil-nav {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.lil-nav a {
+    height: 200px;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.imageNav {
+    object-fit: cover;
+    filter: brightness(50%);
+    transition: 0.3s ease all;
+    box-shadow: 0 5px 15px -10px #111;
+    margin-bottom: 10px;
+}
+
+.imageNav:hover {
+    transform: scale(1.05);
+    filter: brightness(100%);
+}
+
+.titleGallery {
+    color:#FCFAFA;
+    display: none;
+    visibility: hidden;
+    position: relative;
+    text-align: start;
+    bottom: 50%;
+    left: 40%;
+    font-size: 1.5em;
+}
+
+.imageGallery:hover + .titleGallery {
+    display: block;
+    visibility: visible;
+}
+
+.imageGallery {
+    scroll-snap-align: start;
+    margin-bottom: 10px;
+    min-height: 100vh;
+    object-fit: cover;
+    box-shadow: 0 5px 15px -10px #111;
+}
+
+.imageGallery:hover {
+    filter: brightness(30%);
+    transition: filter 0.2s linear;
+}
+
+.btnReservation {
+    height: 70px;
+    width: 20%;
+    background-color: #D00000;
+    border: none; 
+    border-radius: 10px;
+    color: #F3F3F4;
+    font-family: 'Marcellus', serif;
+    box-shadow: 0 5px 15px -10px #111;
+    font-size: 1em;
+    margin-top: 30px;
+}
+
+.btnReservation:hover {
+    height: 75px;
+    width: 21%;
+}
+
+.linkBtn {
+    text-decoration: none;
+    color: #F3F3F4;
+}
+
+.containerHome {
+    display: grid;
+    grid-template-areas: 
+    "textHome textHome logoHome"
+    "textHome textHome chiefImg"
+    "linkHome1 linkHome2 chiefImg";
+    grid-gap: 5px;
+    width: 90%;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 50px;
+}
+
+.logoHome {
+    width: 250px;
+    grid-area: logoHome;
+}
+
+.chiefImg {
+    box-shadow: 0 5px 15px -10px #111;
+    border-radius: 10px;
+    width: 400px;
+    grid-area: chiefImg;
+}
+
+.textHome {
+    font-size: 1.5em;
+    text-align: center;
+    font-family: 'Antic Didone', serif;
+    color: #03191E;
+    font-weight: 500;
+    grid-area: textHome;
+    letter-spacing: 2px;
+    word-spacing: 1rem;
+    margin-right: 70px;
+    line-height: 4rem;
+}
+
+.linkHome1 {
+    grid: linkHome1;
+    text-decoration: none;
+    font-size: 1.5em;
+    color:#D00000;
+}
+
+.linkHome2 {
+    grid: linkHome2;
+    text-decoration: none;
+    font-size: 1.5em;
+    color:#D00000;
 }
