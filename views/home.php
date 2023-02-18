@@ -6,7 +6,7 @@ $title = "Bienvenue au Quai Antique";
 
 ob_start();
 ?>
-<h2>Nos plus gros succès</h2>
+<h2 class="subTitleHome">Nos plus gros succès</h2>
 <div class="wrapper">
     <nav class="navGallery">
         <?php foreach($images as $image): ?>
@@ -22,8 +22,8 @@ ob_start();
     <?php endforeach; ?>
     </div>
 </div>
-<button type="button" class="btnReservation"><a class="linkBtn" href="/reserver">Reserver</a></button>
 <div class="containerHome">
+    <button type="button" class="btnReservation"><a class="linkBtn" href="/reservation">Reserver</a></button>
     <p class="textHome">
     Voici le site web de notre Restaurant 
     <strong>Le Quai Antique</strong> à Chambery venez découvrir autour d'une table la saveur de la savoie préparé 

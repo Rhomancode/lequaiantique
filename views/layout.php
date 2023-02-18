@@ -11,11 +11,50 @@
     <title>Le Quai Antique</title>
 </head>
 <header>
+    <nav class="navMenuMobile" role="navigation">
+
+        <div class="menuToggleMobile">
+
+            <input type="checkbox" class="burger"/>
+
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul class="menuMobile">
+                <a href="/reservation"><li>Réserver</li></a>
+                <a href="/la-carte"><li>La Carte</li></a>
+                <a href="/nos-menus"><li>Nos Menus</li></a>
+                <?php if(!isset($_SESSION['user'])): ?>
+                    <a href="/inscription"><li>S'inscire</li></a>
+                    <a href="/connexion"><li>Se connecter</li></a>
+                <?php elseif($_SESSION['user']['role'] === 'role_user'): ?>
+                    <li>Bonjour <?= $_SESSION['user']['lastName']. ' '.$_SESSION['user']['firstName'] ?></li>
+                    <a href="/profil"><li>Mes informations</li></a>
+                    <a href="/profil"><li>Mes réservation</li></a>
+                    <a href="/deconnexion"><li>Déconnexion</li></a>
+                <?php elseif ($_SESSION['user']['role'] === 'role_admin'): ?>
+                    <li><strong>Bonjour <?= $_SESSION['user']['lastName']. ' '.$_SESSION['user']['firstName'] ?></strong></li>
+                    <a href="/images"><li>Gérer les images d'accueil</li></a>
+                        <a href="/entrees"><li> Gérer les entrées</li></a>
+                        <a href="/plats"><li>Gérer les plats</li></a>
+                        <a href="/desserts"><li>Gérer les désserts</li></a>
+                        <a href="/formules"><li>Gérer les formules de menu</a></a>
+                        <a href="/menus"><li >Gérer les menus</li></a>
+                        <a href="/profil"><li>Gérer les horraires</li></a>
+                        <a href="/profil"><li>Gérer les réservations</li></a>
+                        <a href="/deconnexion"><li>Deconnexion</li></a>
+                <?php endif; ?>    
+            </ul>
+        </div>
+        <div class='itemsNavMobile'>
+            <a class="navItemLogoMobile" href="/"><img class="navItemLogo" src="../assets/images/lequaiantiquelogo.png"></a>
+        </div>
+    </nav>
     <nav class="navMenu">
         <a class="navItem" href='/la-carte'>La Carte</a>
         <a class="navItem" href="/nos-menus">Nos Menus</a>
         <a class="navItemLogo" href="/"><img class="navItemLogo" src="../assets/images/lequaiantiquelogo.png"></a>
-        <a class="navItem" href="#">Réserver</a>
+        <a class="navItem" href="/reservation">Réserver</a>
         <?php if(!isset($_SESSION['user'])): ?>
             <div>
                 <a class="navItem Connect" href="/inscription">S'inscire</a>
@@ -55,7 +94,7 @@
         <img src="../assets/images/background.jpg">
     </div>
     <div class="contentContainer">
-        <h1><?= $title ?></h1>
+        <h1 class="titleContent"><?= $title ?></h1>
         <?= $content ?>
     </div>
 </body>
