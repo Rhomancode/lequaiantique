@@ -40,6 +40,7 @@ header{
 
     .navMenuMobile {
         display: block;
+        width: 100%;
         height: 120px;
         background-color: #F3F3F4;
         border-radius: 25px;
@@ -49,7 +50,8 @@ header{
     .menuToggleMobile {
         position: relative;
         display: block;
-        left: 50px;
+        max-width: 100%;
+        left: 15px;
         top: 50px;
         visibility: visible;
         -webkit-user-select: none;
@@ -136,12 +138,12 @@ header{
     }
 
     .menuMobile li {
-        padding: 20px;
-        font-size: 2em;
+        padding: 10px;
         border-left: 3px solid #D00000;
         text-decoration: none;
         color: rgb(49, 49, 49);
-        margin-bottom: 50px;
+        margin-bottom: 20px;
+        font-weight: 700;
     }
     
     .menuMobile a{
@@ -155,12 +157,17 @@ header{
         justify-content: center;
         align-items: center;
         position: relative;
-        bottom: 50px;
+        bottom: 30px;
+        left: 15px;
     }
 
     .navItemLogoMobile {
         display: contents;
         visibility: visible;
+    }
+
+    .navItemLogoMobile img {
+        width: 120px;
     }
 }
 
@@ -255,8 +262,7 @@ header{
 
 @media screen and (max-width: 1200px) {
     .imgContainer {
-        display: none;
-        visibility: none;
+        width: fit-content;
     }
 }
 
@@ -273,13 +279,6 @@ header{
     padding-bottom: 20px;
     z-index: 2;
 }
-@media screen and (max-width: 1200px) {
-    .contentContainer{
-        width: 100%;
-        border-radius: 25px;
-        margin: 0% 0% 0% 0% ;
-    }
-}
 
 .titleContent {
     color:#03191E;
@@ -287,9 +286,11 @@ header{
 
 @media screen and (max-width: 1200px) {
     .titleContent {
-        font-size: 3em;
+        font-size: 1.2em;
+        margin: 15px;
     }
 }
+
 
 .titleCategoriesMenu {
     font-family: 'Merriweather', serif;
@@ -299,16 +300,13 @@ header{
 }
 
 @media screen and (max-width: 1200px){
-    .titleCategoriesMenu, .titleMenu .descriptionMenu, .priceMenu {
-        font-size: 2em;
+    .titleCategoriesMenu {
+        margin-bottom: 20px;
+    }
+
+    .descriptionMenu, .titleMenu {
         margin: 5px;
     }
-
-    .titleCategoriesMenu {
-        margin-bottom: 30px;
-    }
-
-    
 }
 
 li {
@@ -367,11 +365,6 @@ li {
     color: #D00000;
 }
 
-@media screen and (max-width: 1200px) {
-    .titleHour {
-        font-size: 2em;
-    }
-}
 
 .horraires {
     table-layout:fixed;
@@ -384,14 +377,14 @@ li {
 
 @media screen and (max-width: 1200px) {
     .horraires {
-        font-size: 1.4em;
-        width: 90%;
+        width: 80%;
+        font-size: 0.6em;
     }
 }
 
 .form {
     width: 400px;
-    padding: 50px 35px;
+    padding: 20px 35px 10px 10px;
     position: relative;
 }
 
@@ -399,17 +392,17 @@ li {
     .form {
         width: 80%;
     }
+
+    .formLink {
+        font-size: 0.8em;
+        margin-left: 10px;
+    }
 }
 
 .formGroup {
     margin-top: 10px;
 }
 
-@media screen and (max-width: 1200px) {
-    .formGroup {
-        margin-top: 30px;
-    }
-}
 
 .formInput {
     height: 60px;
@@ -422,15 +415,6 @@ li {
     background-color: #FCFAFA;
     padding-left: 15px;
 }
-
-@media screen and (max-width: 1200px) {
-    .formInput {
-        height: 120px;
-        border-radius: 25px;
-        font-size: 1.8em;
-    }
-}
-
 
 .error {
     color: #ff3860;
@@ -462,8 +446,8 @@ li {
 
 @media screen and (max-width: 1200px) {
     .formBtn {
-        font-size: 2.5em;
-        height: 120px;
+        margin-top: 20px;
+        margin-left: 10px;
     }
 }
 
@@ -474,20 +458,14 @@ li {
 
 @media screen and (max-width: 1200px) {
     .formLink {
-        height: 100px;
-        border-radius: 25px;
-        font-size: 1.8em;
+        font-size: 0.6em;
+        margin-left: 20px;
     }
 }
+
 
 .formLabel {
     font-weight: 600;
-}
-
-@media screen and (max-width: 1200px) {
-    .formLabel {
-    font-size: 2em;
-    }
 }
 
 .errorMessage {
@@ -560,12 +538,12 @@ img {
 
 @media screen and (max-width: 1200px){
     .subTitleHome {
-        font-size: 2em;
+        font-size: 0.8;
     }
     .wrapper {
         grid-template-columns: 6fr;
         grid-template-rows: 4fr 1fr;
-        height: 35vh;
+        height: 50vh;
     }
     
 }
@@ -599,6 +577,7 @@ img {
     .navGallery {
         grid-row: 2/2;
         max-width: 100%;
+        overflow-x: scroll;
     }
 }
 
@@ -613,8 +592,9 @@ img {
 
 @media screen and (max-width: 1200px) {
     .imageNav {
-        max-width: 20%;
+        max-width: 30%;
         display: inline-block;
+        margin-left: 4px;
     }
 }
 
@@ -629,9 +609,15 @@ img {
     visibility: hidden;
     position: relative;
     text-align: start;
-    bottom: 50%;
+    bottom: 40%;
     left: 40%;
     font-size: 1.5em;
+}
+
+@media screen and (max-width: 1200px) {
+    .titleGallery {
+        font-size: 0.8em;
+    }
 }
 
 .imageGallery:hover + .titleGallery {
@@ -650,7 +636,7 @@ img {
 @media screen and (max-width: 1200px) {
     .imageGallery {
         object-fit: cover;
-        min-height: 30vh;
+        min-height: 40vh;
     }
 }
 
@@ -672,20 +658,6 @@ img {
     margin-top: 30px;
     font-weight: 500;
     grid-area: btnReservation;
-}
-
-@media screen and (max-width: 1200px) {
-    .btnReservation {
-        font-size: 2.5em;
-        width: 90%;
-        height: 120px;
-    }
-
-    .btnReservation:link, .btnReservation:hover {
-        height: 120px;
-        width: 91%;
-        font-weight: 700;
-    }
 }
 
 .btnReservation:hover {
@@ -719,18 +691,13 @@ img {
         "logoHome chiefImg"
         "textHome textHome"
         "linkHome1 linkHome2";
-        grid-gap: 10px;
+        grid-gap: 20px;
     }
 }
 
 .logoHome {
     width: 250px;
     grid-area: logoHome;
-}
-@media screen and (max-width: 1200px) {
-    .logoHome {
-        width: 350px;
-    }
 }
 
 .chiefImg {
@@ -740,12 +707,6 @@ img {
     grid-area: chiefImg;
 }
 
-@media screen and (max-width: 1200px) {
-    .chiefImg {
-        margin-top: 25px;
-        width: 350px;
-    }
-}
 
 .textHome {
     font-size: 1.5em;
@@ -761,6 +722,14 @@ img {
     margin-right: 30px;
 }
 
+@media screen and (max-width: 1200px) {
+    .textHome {
+        font-size: 0.6em;
+        line-height: 2em;
+        margin-right: 0px;
+    }
+}
+
 .linkHome1 {
     grid: linkHome1;
     text-decoration: none;
@@ -768,6 +737,17 @@ img {
     color:#D00000;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 1200px) {
+    .linkHome1{
+        font-size: 0.8em;
+    }
+
+    .linkHome1:hover {
+        color: #03191E;
+        font-size: 1.0em;
+    }
 }
 
 .linkHome2 {
@@ -779,16 +759,22 @@ img {
     transition: all 0.3s ease-in-out;
 }
 
+@media screen and (max-width: 1200px) {
+    .linkHome2{
+        font-size: 0.8em;
+    }
+
+    .linkHome2:hover {
+        color: #03191E;
+        font-size: 1.0em;
+    }
+}
+
 .linkHome1:hover, .linkHome2:hover {
     color: #03191E;
     font-size: 1.6em;
 }
 
-@media screen and (max-width: 1200px) {
-    .linkHome1, .linkHome2 {
-        font-size: 2.5em;
-    }
-}
 
 
 .reservationCheck {

@@ -3,9 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="Voici le site web de notre Restaurant 
-    Le Quai Antique vous pouvez réserver votre tables sur ce dernier et 
-    consulter notre cartes ainsi que les différents menus.">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="shortcut icon" href="../assets/images/icon_restaurant.png" type="image/x-icon">
     <link rel="stylesheet" href="../styles/style.css">
     <title>Le Quai Antique</title>
@@ -110,8 +108,8 @@
             <?php foreach ($hours as $hour): ?>
             <tr>
                 <td class="tdHour"><?= $hour->dayOfWeek ?></td>
-                <td class="tdHour"><?= $hour->lunchOpening.' à '.$hour->lunchClosing ?></td>
-                <td class="tdHour"><?= $hour->dinerOpening.' à '.$hour->dinerClosing ?></td> 
+                <td class="tdHour"><?= substr($hour->lunchOpening, 0, -3).' à '.substr($hour->lunchClosing, 0, -3) ?></td>
+                <td class="tdHour"><?= substr($hour->dinerOpening, 0, -3).' à '.substr($hour->dinerClosing, 0,-3) ?></td> 
             </tr>
             <?php endforeach; ?>
 </table>
