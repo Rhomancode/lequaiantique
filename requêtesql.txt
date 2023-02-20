@@ -1,7 +1,7 @@
 CREATE TABLE users (
     id CHAR(36) NOT NULL PRIMARY KEY,
     email VARCHAR(256) NOT NULL UNIQUE,
-    password VARCHAR(50) NOT NULL,
+    password VARCHAR(100) NOT NULL,
     lastName VARCHAR(50) NOT NULL,
     firstName VARCHAR(50) NOT NULL,
     phone VARCHAR(10) NOT NULL,
@@ -127,3 +127,8 @@ VALUES
 ('Vendredi', '10c4075e-a30d-11ed-9875-f39927f76100', '12:00:00', '14:30:00', '18:30:00', '22:30:00'),
 ('Samedi', '10c4075e-a30d-11ed-9875-f39927f76100', '12:00:00', '14:30:00', '18:30:00', '23:00:00'),
 ('Dimanche', '10c4075e-a30d-11ed-9875-f39927f76100', '11:00:00', '15:00:00', '18:30:00', '22:30:00');
+
+INSERT INTO roles (id, name) VALUES (UUID(), 'role_admin'), (UUID(), 'role_user');
+
+//Transformation du compte utilisateur roman.pons31@gmail.com en administrateur
+UPDATE `userRoles` SET `roleId` = 'ff0fcbb4-a6e9-11ed-9875-f39927f76100' WHERE `userRoles`.`userId` = '745aa622-a707-11ed-9875-f39927f76100' AND `userRoles`.`roleId` = 'ff1194a8-a6e9-11ed-9875-f39927f76100';

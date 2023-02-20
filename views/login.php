@@ -1,10 +1,13 @@
 <?php
 
+
 $title = "Connectez-vous";
 
 ob_start();
-?>
-<form class="form" action="" method="post">
+if (!empty($message)) { ?>
+    <p class="errorMessage"><?php echo $message ?></p>
+<?php } ?>
+<form class="form" id="form" action="" method="post">
     <div class="formGroup">
         <label class="formLabel" for="email">Email</label>
     </div>
@@ -25,7 +28,6 @@ ob_start();
     <a href="#" class="formLink">Mot de passe oublié</a>
     </div>
 </form>
-
 
 
 <?php

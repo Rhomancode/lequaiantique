@@ -17,6 +17,7 @@ class Hours
             $hours[] = $hour;
         }
 
+        
         return $hours;
     }
 }
