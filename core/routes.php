@@ -34,5 +34,6 @@ $routes = [
     '/menu' => '../controllers/menus/update.php',
     '/menu/supprimer' => '../controllers/menus/delete.php',
     '/nos-menus' => '../controllers/menus.php',
+    '/reservation' => '../controllers/reservation.php',
 ];
 
