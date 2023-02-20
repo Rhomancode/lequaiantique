@@ -1,6 +1,8 @@
 <?php
 
+session_start();
 require_once('../models/validDataForm.php');
+
 
 
 if(isset($_GET['id']) && !empty($_GET['id'])) {
