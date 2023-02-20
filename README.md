@@ -5,7 +5,7 @@ Bienvue sur le Git de mon site le quai antique pour l'ECF.
 
 Pour consulter le site en ligne : 
 
-Rendez-vous sur lequaiantique.fr 
+Rendez-vous sur [lequaiantique.fr ](https://lequaiantique.fr/)
 
 Pour consulter le site en local : 
 
@@ -16,5 +16,5 @@ Pour consulter le site en local :
  - Connexion à la base de données : DB = u112463479_lequaiantique,  User = u112463479_admin,
    Pour le mot de passe veuillez me le demander par Email à roman.pons31@gmail.com.
     
-   Merci de votre compréhension bon usage.
+   Merci de votre compréhension,  bon usage.
  
