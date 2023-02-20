@@ -18,8 +18,8 @@ if (!empty($messageSuccess)) { ?>
     </tr>
     <?php foreach ($images as $image): ?>
     <tr>
-        <td><image class="imageBddList" src="assets/images/img_bdd/<?= $image->img ?>"></td>
-        <td><?=$image->title ?></td>
+        <td data-label='Image'><image class="imageBddList" src="assets/images/img_bdd/<?= $image->img ?>"></td>
+        <td data-label='Titre'><?=$image->title ?></td>
         <td><a class="addButton"href="/image?id=<?= $image->id; ?>">Modifier</a></td>
         <td><a class="delButton"href="/image/supprimer?id=<?= $image->id; ?>">Supprimer</a></td>
     </tr>

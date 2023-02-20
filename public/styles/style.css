@@ -488,6 +488,29 @@ li {
     z-index: 2;
 }
 
+@media screen and (max-width: 1200px) {
+    .tabAdmin th {
+        display: none;
+    }
+    
+    
+    .tabAdmin tr {
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .tabAdmin td {
+        display: block;
+        text-align: right;
+    }
+
+    .tabAdmin td:before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+    }
+}
+
 
 .tabAdmin td {
     padding: 20px;

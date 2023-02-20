@@ -17,7 +17,7 @@ if (!empty($messageSuccess)) { ?>
     </tr>
     <?php foreach ($formulas as $formula): ?>
     <tr>
-        <td><?=$formula->name ?></td>
+        <td data-label='Nom'><?=$formula->name ?></td>
         <td><a class="addButton"href="/formule?id=<?= $formula->id; ?>">Modifier</a></td>
         <td><a class="delButton"href="/formule/supprimer?id=<?= $formula->id; ?>">Supprimer</a></td>
     </tr>

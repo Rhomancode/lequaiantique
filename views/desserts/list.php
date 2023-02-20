@@ -19,9 +19,9 @@ if (!empty($messageSuccess)) { ?>
     </tr>
     <?php foreach ($desserts as $dessert): ?>
     <tr>
-        <td><?=$dessert->name ?></td>
-        <td><?=$dessert->description ?></td>
-        <td><?=$dessert->price.'€' ?></td>
+        <td data-label='Nom'><?=$dessert->name ?></td>
+        <td data-label='Description'><?=$dessert->description ?></td>
+        <td data-label='Prix'><?=$dessert->price.'€' ?></td>
         <td><a class="addButton"href="/dessert?id=<?= $dessert->id; ?>">Modifier</a></td>
         <td><a class="delButton"href="/dessert/supprimer?id=<?= $dessert->id; ?>">Supprimer</a></td>
     </tr>

@@ -20,9 +20,9 @@ if (!empty($messageSuccess)) { ?>
     </tr>
     <?php foreach ($dishes as $dishe): ?>
     <tr>
-        <td><?=$dishe->name ?></td>
-        <td><?=$dishe->description ?></td>
-        <td><?=$dishe->price.'€' ?></td>
+        <td data-label='Nom'><?=$dishe->name ?></td>
+        <td data-label='Description'><?=$dishe->description ?></td>
+        <td data-label='Prix'><?=$dishe->price.'€' ?></td>
         <td><a class="addButton"href="/plat?id=<?= $dishe->id; ?>">Modifier</a></td>
         <td><a class="delButton"href="/plat/supprimer?id=<?= $dishe->id; ?>">Supprimer</a></td>
     </tr>
