@@ -23,7 +23,7 @@ class Menus
                 LEFT JOIN dishes AS dishe3 ON menus.dishe3 = dishe3.id
                 JOIN desserts AS dessert1 ON menus.dessert1 = dessert1.id
                 LEFT JOIN desserts AS dessert2 ON menus.dessert2 = dessert2.id
-                LEFT JOIN desserts AS dessert3 ON menus.dessert3 = dessert3.id;');
+                LEFT JOIN desserts AS dessert3 ON menus.dessert3 = dessert3.id');
         }
         $menus = [];
         while ($menu = $stmt->fetchObject()) {
